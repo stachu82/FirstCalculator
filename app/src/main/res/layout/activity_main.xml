@@ -13,7 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:background="#EDE7F6"
+        android:gravity="bottom|right|center_vertical"
         android:maxLength="12"
+        android:padding="10dp"
         android:textSize="48sp" />
 
     <LinearLayout
@@ -57,7 +59,7 @@
             android:layout_weight="1"
             android:textSize="34sp"
             android:text="/"
-            android:onClick="onDigit"/>
+            android:onClick="onOperator"/>
     </LinearLayout>
 
     <LinearLayout
@@ -99,7 +101,7 @@
             android:layout_weight="1"
             android:textSize="34sp"
             android:text="*"
-            android:onClick="onDigit"/>
+            android:onClick="onOperator"/>
     </LinearLayout>
 
     <LinearLayout
@@ -141,7 +143,7 @@
             android:layout_weight="1"
             android:textSize="34sp"
             android:text="-"
-            android:onClick="onDigit"/>
+            android:onClick="onOperator"/>
     </LinearLayout>
 
     <LinearLayout
@@ -158,7 +160,7 @@
             android:layout_weight="1"
             android:textSize="34sp"
             android:text="."
-            android:onClick="onDigit"/>
+            android:onClick="onDot"/>
 
         <Button
             android:id="@+id/btnZero"
@@ -176,7 +178,7 @@
             android:layout_weight="1"
             android:textSize="24sp"
             android:text="CLR"
-            android:onClick="onDigit"/>
+            android:onClick="onClear"/>
 
         <Button
             android:id="@+id/btnAdd"
@@ -185,7 +187,7 @@
             android:layout_weight="1"
             android:textSize="34sp"
             android:text="+"
-            android:onClick="onDigit"/>
+            android:onClick="onOperator"/>
     </LinearLayout>
 
     <LinearLayout
@@ -201,6 +203,6 @@
             android:layout_height="match_parent"
             android:textSize="34sp"
             android:text="="
-            android:onClick="onDigit"/>
+            android:onClick="onEqual"/>
     </LinearLayout>
 </LinearLayout>
